@@ -7,12 +7,13 @@ module.exports = function(app)  {
     res.send(dbjson);
     })  
     app.post("/api/notes", function (req, res) {
-        let noteId = uuid()
+        let noteId = uuidv4()
         let newNote = { 
             id: noteId,
             title: req.body.title,
             text:  req.body.text
         }
+
         fs.readFile("./dbnotes/db.json","utf8", (err,data) => {
             if (err) throw err
             const allNotes = JSON.parse(data)
