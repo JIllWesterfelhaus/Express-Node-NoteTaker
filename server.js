@@ -19,6 +19,7 @@ app.use(express.static("public"))
 //const newNote = [
 //];
 require ("./routes/htmlroutes.js")(app)
+require ("./routes/apiroutes.js")(app)
 
 // Routes
 // =============================================================
