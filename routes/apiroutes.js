@@ -4,8 +4,9 @@ const { v4:uuidv4 } = require ("uuid");
 uuidv4();
 module.exports = function(app)  {
     app.get("/api/notes", function (req, res) {
-    res.send(dbjson);
-    })  
+            res.send(dbjson)    
+         
+    });  
     app.post("/api/notes", function (req, res) {
         let noteId = uuidv4()
         let newNote = { 
@@ -13,7 +14,6 @@ module.exports = function(app)  {
             title: req.body.title,
             text:  req.body.text  
         }
-
         fs.readFile("./dbnotes/db.json","utf8", (err,data) => {
             if (err) throw err
             const allNotes = JSON.parse(data)
@@ -22,13 +22,9 @@ module.exports = function(app)  {
             if (err) throw err
             res.send(dbjson)
             console.log("Note Created")
-        }
-        )
-
-        }
-        )
-    } 
-    )
+        });
+        });
+    });
     app.delete("/api/notes/:id", function (req, res) {
         let noteId = req.params.id
         fs.readFile("./dbnotes/db.json","utf8", (err,data) => {
@@ -39,8 +35,7 @@ module.exports = function(app)  {
                 if (err) throw err
                 res.send(dbjson)
                 console.log("Note Deleted")
-            })
-
-        })
-    })
-    }
+            });
+        });
+    });
+    };
