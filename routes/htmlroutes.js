@@ -1,6 +1,6 @@
 var path = require("path")
 module.exports = function(app) {
-//need to create notes.html file
+//need to create notes.html file 
 app.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/notes.html"));
   });
@@ -9,3 +9,4 @@ app.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 }
+

@@ -1,10 +1,5 @@
 [
   {
-    "id": "8ba99cf0-3ee3-43c0-aaff-be952a74cc42",
-    "title": "More notes",
-    "text": "Here are more notes."
-  },
-  {
     "id": "a53f044d-62a1-4a9e-886e-b6a327306f91",
     "title": "New note",
     "text": "Note 4/27/20 5:13 pm"
@@ -15,11 +10,6 @@
     "text": "4/27/20 5:22 pm"
   },
   {
-    "id": "74b6fe1c-b121-4ce9-8205-d351938899ac",
-    "title": "note",
-    "text": "4/28/20 11:02am"
-  },
-  {
     "id": "ee520295-6c15-497d-bde2-19ee461ece3f",
     "title": "note",
     "text": "4/28/20 11:11 am"
@@ -28,5 +18,15 @@
     "id": "9b813c7f-d3e8-486d-8c40-7d12f3548d83",
     "title": "it's a note",
     "text": "4/28/20 11:48 am"
+  },
+  {
+    "id": "eb0bb2d2-f266-4dcc-9dcd-7553b17846a5",
+    "title": "4/28/20, 4:45 pm",
+    "text": "see above"
+  },
+  {
+    "id": "3239f812-90d3-4af4-a45e-9720e28eec55",
+    "title": "4/2/20 9:54 am",
+    "text": "trying a note"
   }
 ]
