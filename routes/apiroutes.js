@@ -19,7 +19,7 @@ module.exports = function(app)  {
             allNotes.push(newNote)
         fs.writeFile("./dbnotes/db.json",JSON.stringify(allNotes, null, 2), err => {
             if (err) throw err
-            res.send(dbjson)
+            return res.json(allNotes)
             console.log("Note Created")
         });
         });
@@ -32,7 +32,7 @@ module.exports = function(app)  {
             const updatedNotes = allNotes.filter(note => note.id!= noteId)
             fs.writeFile("./dbnotes/db.json",JSON.stringify(updatedNotes, null, 2), err => {
                 if (err) throw err
-                res.send(dbjson)
+                return res.json(allNotes)
                 console.log("Note Deleted")
             });
         });
