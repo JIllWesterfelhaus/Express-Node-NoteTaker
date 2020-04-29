@@ -4,8 +4,7 @@ const { v4:uuidv4 } = require ("uuid");
 uuidv4();
 module.exports = function(app)  {
     app.get("/api/notes", function (req, res) {
-            res.send(dbjson)    
-         
+            res.send(dbjson)          
     });  
     app.post("/api/notes", function (req, res) {
         let noteId = uuidv4()
