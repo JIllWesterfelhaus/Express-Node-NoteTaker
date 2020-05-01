@@ -20,7 +20,7 @@ module.exports = function(app)  {
         fs.writeFile("./dbnotes/db.json",JSON.stringify(allNotes, null, 2), err => {
             if (err) throw err
             res.redirect("/")
-            console.log("Note Created")
+            console.log("Note Created")  
         });
         });
     });
