@@ -21,8 +21,6 @@ app.use(express.static("public"))
 require ("./routes/htmlroutes.js")(app)
 require ("./routes/apiroutes.js")(app)
 
-
-
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
