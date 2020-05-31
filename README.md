@@ -3,7 +3,8 @@ Assignment for NU Coding Bootcamp.
 
 
 
-![note_taker]
-(public/assets/note_taker.png)
+![screenshot](public/assets/note%20_taker.png)
+
+ 
 
 
