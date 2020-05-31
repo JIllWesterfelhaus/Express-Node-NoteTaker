@@ -2,7 +2,7 @@
 // =============================================================
 const express = require("express");
 
-// Sets up the Express App
+// Sets up the Express App, need to be set for Heroku to accept
 // =============================================================
 const app = express();
 const PORT = process.env.PORT || 3000;
