@@ -22,6 +22,10 @@ This project was built with Express, Node, and Javascript.
 
 https://warm-mesa-71513.herokuapp.com/
 
+## YouTube video of demo
+
+https://www.youtube.com/watch?v=TBI2s2OkXdU&feature=youtu.be
+
 
 ![screenshot](public/assets/note%20_taker.png)
 
